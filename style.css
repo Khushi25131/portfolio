@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 60px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.skill p {
+  margin: 10px 0;
+}
+
+.bar {
+  background: #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 12px;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  animation: fill 2s ease;
+}
+
+@keyframes fill {
+  from { width: 0; }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #38bdf8;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
